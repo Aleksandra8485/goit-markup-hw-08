@@ -1,15 +1,7 @@
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
     outline: none;
     position: absolute;
     top: 16px;
@@ -27,13 +19,10 @@
     background-color: var($primary-color);
 }
 
-.mobile-menu {
+.menu-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var($white-color);
+    inset: 0;
+    background-color: $white-color;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
         0px 1px 3px rgba(0, 0, 0, 0.16);
     transform: translateX(100%);
@@ -42,7 +31,9 @@
     &.is-open {
         transform: translateX(0);
     }
+}
 
+.mobile-menu {
     &__list {
         margin-left: 40px;
         margin-top: 48px;
@@ -62,11 +53,11 @@
 
     &__link {
         font-size: 40px;
-        color: var($primary-color);
+        color: $primary-color;
         text-decoration: none;
     }
     &__link:hover {
-        color: var($primary-color);
+        color: $primary-color;
     }
 
     &__address {
@@ -79,7 +70,7 @@
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var($primary-color);
+        color: $primary-color;
         text-decoration: none;
         margin-bottom: 32px;
     }
@@ -88,7 +79,7 @@
         font-size: 24px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var($light-grey);
+        color: $light-grey;
         text-decoration: none;
         margin-bottom: 64px;
     }
@@ -101,7 +92,7 @@
         list-style: none;
         font-size: 18px;
         line-height: 1.22;
-        color: var($primary-color);
+        color: $primary-color;
         text-decoration: none;
         display: inline-block;
         padding-right: 10px;
