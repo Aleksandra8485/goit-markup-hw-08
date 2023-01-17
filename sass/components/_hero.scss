@@ -7,10 +7,11 @@
             rgba(47, 48, 58, 0.4) 0%,
             rgba(47, 48, 58, 0.4) 0%
         ),
-        url(../images/hero-mobile2x480x400.jpg);
+        url(../images/hero-mobile2na480x400.jpg);
     background-position: center;
     margin: 0 auto;
     background-repeat: no-repeat;
+    background-size: cover;
 
     &__description {
         font-weight: 900;
@@ -38,6 +39,12 @@
 
 @media screen and (min-width: 768px) {
     .hero-section {
+        background-image: linear-gradient(
+                90deg,
+                rgba(47, 48, 58, 0.4) 0%,
+                rgba(47, 48, 58, 0.4) 0%
+            ),
+            url(../images/hero-tablet2na768x400.jpg);
         &__description {
             margin: 118px 201px 30px;
         }
