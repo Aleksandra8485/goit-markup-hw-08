@@ -250,12 +250,20 @@
                     <ul class="our-team__flex">
                         <li>
                             <figure class="our-team__card">
-                                <img
-                                    src="images/product-designer.jpg"
-                                    alt="zdjęcie John Doe Product Designer"
-                                    width="450"
-                                    height="460"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="product-designer.jpg"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="product-designer2x-354x374.jpg"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <img
+                                        src="product-designer2x-450x460.jpg"
+                                        alt="Zdjęcie mężczyzny w okularach Product Designer"
+                                    />
+                                </picture>
                                 <figcaption class="our-team__photo-bg">
                                     <span class="our-team__worker-name"
                                         >John Doe</span
