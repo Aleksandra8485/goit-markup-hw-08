@@ -48,15 +48,16 @@
         margin-top: 48px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 200px;
+        margin-bottom: 302px;
+        list-style-type: none;
     }
 
     &__item {
         margin-bottom: 32px;
-    }
-
-    &__item:last-child {
-        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
     }
 
     &__link {
@@ -71,19 +72,22 @@
     &__address {
         display: flex;
         flex-direction: column;
-        letter-spacing: 0.02em;
         margin-left: 40px;
     }
 
     &__phone {
         font-size: 34px;
-        color: var();
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var($primary-color);
         text-decoration: none;
         margin-bottom: 32px;
     }
 
-    &__mail {
+    &__email {
         font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
         color: var($light-grey);
         text-decoration: none;
         margin-bottom: 64px;
