@@ -54,7 +54,7 @@
                             class="header__contact-item"
                             href="info@devstudio.com"
                         >
-                            <svg width="16" height="12" class="header__icon">
+                            <svg class="header__icon header__icon--mail">
                                 <use
                                     href="./images/icons.svg#icon-envelope"
                                 ></use>
@@ -64,7 +64,7 @@
                     </li>
                     <li>
                         <a class="header__contact-item" href="tel:+48111111111"
-                            ><svg width="10" height="16" class="header__icon">
+                            ><svg class="header__icon header__icon--phone">
                                 <use
                                     href="./images/icons.svg#icon-smartphone"
                                 ></use>
@@ -76,7 +76,7 @@
                 <!--button to odtwierania menu mobilnego  MOBILE-->
 
                 <button
-                    class="menu-toggle js-open-menu"
+                    class="header__hamburger js-open-menu"
                     aria-expanded="false"
                     aria-controls="mobile-menu"
                 >
@@ -829,13 +829,19 @@
 
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                    <a href="index.html">Agencja</a>
+                    <a
+                        class="mobile-menu__link mobile-menu__link--active"
+                        href="index.html"
+                        >Agencja</a
+                    >
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="portfolio.html">Portfolio</a>
+                    <a class="mobile-menu__link" href="portfolio.html"
+                        >Portfolio</a
+                    >
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#">Kontakt</a>
+                    <a class="mobile-menu__link" href="#">Kontakt</a>
                 </li>
             </ul>
             <div class="mobile-menu__address">
@@ -940,20 +946,23 @@
                         </label>
                     </div>
                     <div class="modal__statute">
-                        <label for="statute_form" class="modal__statute-form">
-                            <input
-                                class="modal__statute-form-checkbox"
-                                type="checkbox"
-                                name="statute"
-                                id="statute_form"
-                            />
-                            <svg
-                                width="16"
-                                height="15"
-                                class="modal__statute-form-checkbox-icon"
-                            >
-                                <use href="./images/icons.svg#icon-check"></use>
-                            </svg>
+                        <label class="modal__statute-form">
+                            <div class="modal__statute-container">
+                                <input
+                                    class="modal__statute-form-checkbox"
+                                    type="checkbox"
+                                    name="statute"
+                                />
+                                <svg
+                                    class="modal__statute-form-checkbox-icon"
+                                    width="16"
+                                    height="15"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-check"
+                                    ></use>
+                                </svg>
+                            </div>
                             <span class="modal__statute-info">
                                 Oświadczam iż akceptuję
                                 <a class="modal__statute-link" href="#">
@@ -962,8 +971,8 @@
                                 i
                                 <a class="modal__statute-link" href="#"
                                     >Politykę Prywatności.</a
-                                ></span
-                            >
+                                >
+                            </span>
                         </label>
                         <button class="modal__btn-statute" type="submit">
                             Wyślij
