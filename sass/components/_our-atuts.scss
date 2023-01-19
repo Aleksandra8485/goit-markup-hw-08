@@ -6,6 +6,16 @@
         list-style: none;
         gap: 30px;
         flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
     }
 
     &__title {
@@ -29,20 +39,14 @@
         margin-bottom: 30px;
         background-color: $beige;
         border-radius: 4px;
-    }
-}
+        text-align: center;
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
-    .our-atuts {
-        &__flex {
-            flex-direction: row;
+        @include tablet {
+            padding: 25px 142px;
         }
 
-        &__icon {
-            padding: 25px 100px;
+        @include desktop {
+            padding: 25px 102px;
         }
     }
 }
