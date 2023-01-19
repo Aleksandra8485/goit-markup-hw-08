@@ -16,7 +16,7 @@
                 rgba(47, 48, 58, 0.4) 0%,
                 rgba(47, 48, 58, 0.4) 0%
             ),
-            url('../images/Hero-tablet@1x.jpg');
+            url('../images/hero-tablet2na768x400.jpg');
     }
     @include desktop {
         background-image: linear-gradient(
@@ -24,7 +24,7 @@
                 rgba(47, 48, 58, 0.4) 0%,
                 rgba(47, 48, 58, 0.4) 0%
             ),
-            url('../images/hero.jpg');
+            url('../images/hero-desktop2na1600x600.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -36,7 +36,7 @@
                     rgba(47, 48, 58, 0.4) 0%,
                     rgba(47, 48, 58, 0.4) 0%
                 ),
-                url('../images/Hero-mob@2x.jpg');
+                url('../images/hero-mobile2na480x400.jpg');
 
             @include tablet {
                 background-image: linear-gradient(
@@ -52,7 +52,7 @@
                         rgba(47, 48, 58, 0.4) 0%,
                         rgba(47, 48, 58, 0.4) 0%
                     ),
-                    url('../images/Hero-desktop@2x.jpg');
+                    url('../images/hero-desktop2na1600x600.jpg');
             }
         }
     }
@@ -66,6 +66,11 @@
         text-align: center;
         display: block;
         margin: 106px auto 30px;
+
+        @include desktop {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
     &__button {
         font-weight: 700;
@@ -79,6 +84,10 @@
         width: 200px;
         height: 50px;
         cursor: pointer;
+
+        @include desktop {
+            margin-bottom: 200px;
+        }
     }
 }
 
