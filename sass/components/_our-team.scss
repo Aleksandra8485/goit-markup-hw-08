@@ -1,6 +1,17 @@
 .our-team {
     background-color: $beige;
 
+    &__info {
+        max-width: 450px;
+
+        @include tablet {
+            max-width: 354px;
+        }
+        @include desktop {
+            max-width: 270px;
+        }
+    }
+
     &__name {
         font-weight: 700;
         font-size: 28px;
@@ -22,6 +33,16 @@
         list-style: none;
         gap: 30px;
         flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
     }
 
     &__card {
