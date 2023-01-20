@@ -1,5 +1,15 @@
 /*----MOBILE FIRST---- */
 .our-atuts {
+    &__info {
+        max-width: 450px;
+
+        @include tablet {
+            max-width: 354px;
+        }
+        @include desktop {
+            max-width: 270px;
+        }
+    }
     &__flex {
         display: flex;
         align-items: center;
@@ -35,19 +45,12 @@
         padding-top: 10px;
     }
     &__icon {
-        padding: 25px 192px;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
         margin-bottom: 30px;
         background-color: $beige;
         border-radius: 4px;
-        text-align: center;
-
-        @include tablet {
-            padding: 25px 142px;
-        }
-
-        @include desktop {
-            padding: 25px 102px;
-        }
     }
 }
 
