@@ -6,6 +6,10 @@
         display: inline-flex;
         justify-content: center;
         flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
     &__address-list {
@@ -16,6 +20,10 @@
         text-decoration: none;
         margin-top: 20px;
         text-align: center;
+
+        @include desktop {
+            text-align: left;
+        }
     }
 
     &__address-flex {
@@ -24,6 +32,10 @@
         list-style-type: none;
         padding-left: 0;
         gap: 9px;
+
+        @include desktop {
+            gap: 8px;
+        }
     }
 
     &__address {
@@ -41,15 +53,14 @@
         font-size: 14px;
         line-height: 1.71;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__contact--underline {
-        text-decoration: underline;
-    }
+        &--underline {
+            text-decoration: underline;
+        }
 
-    &__contact:hover,
-    &__contact:focus {
-        color: $primary-color;
+        &:is(:hover, :focus) {
+            color: $primary-color;
+        }
     }
 
     &__newsletter-title {
@@ -59,11 +70,19 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         margin: 60px 136px 20px 137px;
+
+        @include desktop {
+            margin-top: 11px;
+        }
     }
 
     &__newsletter-flex {
         display: flex;
         flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
     &__newsletter-form {
@@ -80,6 +99,7 @@
         letter-spacing: 0.03em;
         outline: transparent;
         color: $white-color;
+        max-width: 450px;
     }
 
     &__newsletter-btn {
@@ -107,6 +127,11 @@
 
     &__join-us {
         margin: 60px 146px 20px;
+
+        @include desktop {
+            margin-top: 12px;
+            margin-left: 70px;
+        }
     }
 
     &__join-us-flex {
@@ -146,38 +171,15 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-}
+/*
+        @include desktop {
+            margin-left: 78px;
+        }
 
-@media screen and (min-width: 1200px) {
-    .footer {
-        &__flex {
-            flex-direction: row;
-        }
-        &__newsletter-flex {
-            flex-direction: row;
-        }
-        &__address-list {
-            text-align: left;
-        }
-        &__address-flex {
-            gap: 8px;
-        }
-        &__join-us {
-            margin-top: 12px;
-            margin-left: 70px;
-        }
-        &__newsletter-title {
-            margin-top: 11px;
-        }
         &__newsletter {
             margin-left: 78px;
         }
-        &__newsletter-form {
-            width: 358px;
-        }
-    }
-}
+        */
 
 /*
 .footer {
