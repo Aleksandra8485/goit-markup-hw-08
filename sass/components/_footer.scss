@@ -120,10 +120,10 @@
         color: $white-color;
         max-width: 450px;
         width: 100%;
-        display: block;
 
         @include desktop {
             max-width: 358px;
+            display: block;
         }
     }
 
