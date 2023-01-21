@@ -90,6 +90,7 @@
 
         @include desktop {
             margin-top: 11px;
+            text-align: left;
         }
     }
 
@@ -100,10 +101,6 @@
         @include desktop {
             flex-direction: row;
         }
-    }
-
-    &__newsletter-label {
-        display: block;
     }
 
     &__newsletter-form {
@@ -122,9 +119,12 @@
         max-width: 450px;
         width: 100%;
 
+        @include tablet {
+            margin: 0 auto;
+        }
+
         @include desktop {
             max-width: 358px;
-            display: block;
         }
     }
 
@@ -183,6 +183,10 @@
         font-size: 14px;
         line-height: 1.17;
         letter-spacing: 0.03em;
+
+        @include desktop {
+            text-align: left;
+        }
 
         &--color {
             color: $white-color;
