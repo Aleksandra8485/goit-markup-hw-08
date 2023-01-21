@@ -124,7 +124,7 @@
         }
 
         @include desktop {
-            max-width: 358px;
+            min-width: 358px;
         }
     }
 
@@ -145,6 +145,7 @@
         gap: 24px;
         align-items: center;
         margin: 20px auto 0;
+        white-space: nowrap;
 
         @include desktop {
             margin-top: 0;
