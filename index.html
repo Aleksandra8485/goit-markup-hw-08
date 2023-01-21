@@ -253,14 +253,14 @@
                             <figure class="our-team__card">
                                 <img
                                     alt="Zdjęcie mężczyzny w okularach Product Designer"
-                                    src="images/desktop/product-designer.jpg"
+                                    src="images/product-designer.jpg"
                                     srcset="
-                                        images/desktop/product-designer.jpg          270w,
-                                        images/desktop/product-designer2x270x260.jpg 540w,
-                                        images/tablet/product-designer1x354x374.jpg  354w,
-                                        images/tablet/product-designer2x354x374.jpg  708w,
-                                        images/mobile/product-designer1x450x460.jpg  450w,
-                                        images/mobile/product-designer2x450x460.jpg  900w
+                                        images/product-designer.jpg          270w,
+                                        images/product-designer2x450x460.jpg 540w,
+                                        images/product-designer1x354x374.jpg 354w,
+                                        images/product-designer2x354x374.jpg 708w,
+                                        images/product-designer1x450x460.jpg 450w,
+                                        images/product-designer2x450x460.jpg 900w
                                     "
                                     sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                                 />
@@ -431,15 +431,32 @@
                             <figure class="our-team__card">
                                 <picture>
                                     <source
-                                        srcset="images/marketing.jpg"
-                                        media="(min-width: 1200px)"
+                                        media="screen and (max-width:
+                                767px)"
+                                        srcset="
+                                            images/marketing1x-450x460,
+                                            images/marketing2x-450x460.jpg
+                                        "
                                     />
+
                                     <source
-                                        srcset="images/marketing2x-354x374.jpg"
-                                        media="(min-width: 768px)"
+                                        media="screen and (min-width:
+                                    768px)"
+                                        srcset="
+                                            images/marketing1x-354x374.jpg,
+                                            images/marketing2x-354x374.jpg
+                                        "
+                                    />
+
+                                    <source
+                                        media="screen and (min-width: 1200px)"
+                                        srcset="
+                                            images/marketing.jpg,
+                                            images/marketing2x270x260.jpg
+                                        "
                                     />
                                     <img
-                                        src="images/marketing2x-450x460.jpg"
+                                        src="images/marketing.jpg"
                                         alt="Zdjęcie uśmiechniętego mężczyzny bez okularów Marketing"
                                     />
                                 </picture>
