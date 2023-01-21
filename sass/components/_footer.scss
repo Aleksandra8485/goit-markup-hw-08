@@ -101,6 +101,10 @@
         }
     }
 
+    &__newsletter-label {
+        display: block;
+    }
+
     &__newsletter-form {
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
@@ -116,6 +120,7 @@
         color: $white-color;
         max-width: 450px;
         width: 100%;
+        display: block;
 
         @include desktop {
             max-width: 358px;
